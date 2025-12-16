@@ -24,8 +24,8 @@ export default function HomePage() {
         backgroundImage="/images/home-image.avif"
         contactInfo={{
           youtube: "@ShivShankarChef",
-          phone: "+1 (555) 123-4567",
-          address: "20 Fieldstone Dr, Roswell, GA",
+          phone: "+91-8822131781",
+          address: "Fatasil, Ambari, Guwahati, Assam 781005",
         }}
       />
     </div>
