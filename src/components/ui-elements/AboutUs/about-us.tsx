@@ -10,7 +10,7 @@ import {
   //   Ruler,
   //   PenTool,
   Building2,
-  Award,
+  // Award,
   Users,
   Calendar,
   CheckCircle,
@@ -130,7 +130,6 @@ export default function AboutUsSection() {
   ];
 
   const stats = [
-    { icon: <Award />, value: 150, label: "Projects Completed", suffix: "+" },
     { icon: <Users />, value: 1200, label: "Happy Clients", suffix: "+" },
     { icon: <Calendar />, value: 12, label: "Years Experience", suffix: "" },
     {
@@ -143,7 +142,7 @@ export default function AboutUsSection() {
 
   return (
     <section
-      id="about-section"
+      id="about"
       ref={sectionRef}
       className="w-full py-24 px-4 bg-linear-to-b from-[#F2F2EB] to-[#F8F8F2] text-[#202e44] overflow-hidden relative"
     >
@@ -349,7 +348,7 @@ export default function AboutUsSection() {
         {/* Stats Section */}
         <motion.div
           ref={statsRef}
-          className="mt-24 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8"
+          className="mt-24 grid grid-cols-1 sm:grid-cols-3 gap-8 justify-items-center"
           initial="hidden"
           animate={isStatsInView ? "visible" : "hidden"}
           variants={containerVariants}
@@ -385,6 +384,12 @@ export default function AboutUsSection() {
             className="bg-[#88734C] hover:bg-[#88734C]/90 text-white px-6 py-3 rounded-lg flex items-center gap-2 font-medium transition-colors"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
+            onClick={() => {
+              const section = document.getElementById("services");
+              if (section) {
+                section.scrollIntoView({ behavior: "smooth" });
+              }
+            }}
           >
             Our Services <ArrowRight className="w-4 h-4" />
           </motion.button>
