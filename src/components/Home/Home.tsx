@@ -12,14 +12,17 @@ export default function HomePage() {
         slogan="ELEVATE YOUR PERSPECTIVE"
         title={
           <>
-            Each Peak <br />
-            <span className="text-primary">Teaches Something</span>
+            Elevating <span className="text-indigo-500">Hospitality</span>,{" "}
+            <br />
+            <span className="text-primary">
+              <span className="text-indigo-500">Inspiring</span> Success
+            </span>
           </>
         }
-        subtitle="Discover breathtaking landscapes and challenge yourself with our guided mountain expeditions. Join a community of adventurers."
+        subtitle="At Shiv Shankar Chef Hospitality Consultants, we partner with you to deliver tailored, practical solutions designed to maximize your potential and profitability. Whatever your hospitality ambitions, we’re here to help you achieve and exceed them."
         callToAction={{
           text: "JOIN US TO EXPLORE",
-          href: "#explore",
+          href: "#",
         }}
         backgroundImage="/images/home-image.avif"
         contactInfo={{

@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menus } from "../ui-elements/Navbar/menus";
+import { Diamond } from "lucide-react";
 
 // Timing Bar (Top bar with schedule)
 function TimingBar({ show }: { show: boolean }) {
@@ -40,7 +41,9 @@ export default function Navbar() {
       <div className="w-full bg-[#dddddd] flex items-center justify-between px-8 py-4 shadow transition-all">
         {/* Logo/Brand */}
         <span className="font-bold text-2xl flex items-center">
-          <span className="mr-2 text-3xl">◆</span>
+          <span className="mr-2 text-3xl">
+            <Diamond />
+          </span>
           Consultant
         </span>
         {/* Menu */}
