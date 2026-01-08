@@ -255,7 +255,7 @@ export default function AboutUsSection() {
                 whileHover={{ scale: 1.03, transition: { duration: 0.3 } }}
               >
                 <img
-                  src="/images/aboput-us-center-image.jpg"
+                  src="/Images/aboput-us-center-image.jpg"
                   alt="Modern House"
                   className="w-full h-full object-cover"
                 />

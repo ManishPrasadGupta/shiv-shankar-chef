@@ -5,7 +5,7 @@ export default function HomePage() {
     <div className="w-full">
       <HeroSection
         logo={{
-          url: "/images/shivShankar.jpg",
+          url: "/Images/shivShankar.jpg",
           alt: "Company Logo",
           text: "Shiv Shankar Chef",
         }}
@@ -24,7 +24,7 @@ export default function HomePage() {
           text: "JOIN US TO EXPLORE",
           href: "#",
         }}
-        backgroundImage="/images/home-image.avif"
+        backgroundImage="/Images/home-image.avif"
         contactInfo={{
           youtube: "@ShivShankarChef",
           phone: "+91-8822131781",
