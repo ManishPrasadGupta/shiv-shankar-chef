@@ -79,6 +79,6 @@ const menus = [
   },
 ];
 
-export function Menus() {
-  return <Menu list={menus} />;
+export function Menus(props: { onClickMenuItem?: () => void }) {
+  return <Menu list={menus} onClickMenuItem={props.onClickMenuItem} />;
 }

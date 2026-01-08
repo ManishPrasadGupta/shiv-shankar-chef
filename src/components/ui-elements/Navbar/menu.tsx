@@ -14,15 +14,16 @@ export type IMenu = {
 
 type MenuProps = {
   list: IMenu[];
+  onClickMenuItem?: () => void;
 };
 
-const Menu = ({ list }: MenuProps) => {
+const Menu = ({ list, onClickMenuItem }: MenuProps) => {
   const [hovered, setHovered] = useState<number | null>(null);
 
   return (
     <MotionConfig transition={{ bounce: 0, type: "tween" }}>
       <nav className={"relative"}>
-        <ul className={"flex items-center"}>
+        <ul className="flex flex-col md:flex-row items-start md:items-center w-full">
           {list?.map((item) => {
             return (
               <li key={item.id} className={"relative"}>
@@ -32,6 +33,9 @@ const Menu = ({ list }: MenuProps) => {
                     hover:bg-foreground/10
                     ${hovered === item?.id ? "bg-foreground/10" : ""}
                   `}
+                  onClick={() => {
+                    if (onClickMenuItem) onClickMenuItem();
+                  }}
                   onMouseEnter={() => setHovered(item.id)}
                   onMouseLeave={() => setHovered(null)}
                   href={item?.url}
